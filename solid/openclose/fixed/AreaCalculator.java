@@ -1,7 +1,14 @@
 package openclose.fixed;
 
-public interface AreaCalculator {
+import java.util.List;
 
-    double calculateTotalArea(List<Shape> shape);
+public class AreaCalculator {
 
+    public double calculateTotalArea(List<Shape> shapes) {
+        double totalArea = 0;
+        for (Shape shape : shapes) {
+            totalArea += shape.calculateArea();
+        }
+        return totalArea;
+    }
 }

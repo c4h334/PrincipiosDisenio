@@ -1,6 +1,6 @@
 package openclose.fixed;
 
-public class Circle extends AreaCalculator implements Shape {
+public class Circle implements Shape {
     private double radius;
 
     public Circle(double radius) {
@@ -12,8 +12,7 @@ public class Circle extends AreaCalculator implements Shape {
     }
 
     @Override
-    public double calculateTotalArea(Shape shape) {
-        return Math.PI * Math.pow(getRadius(), 2);
+    public double calculateArea() {
+        return Math.PI * Math.pow(radius, 2);
     }
-
 }

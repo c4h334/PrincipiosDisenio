@@ -1,7 +1,6 @@
 package openclose.fixed;
 
-public class Rectangle extends Shape {
-
+public class Rectangle implements Shape {
     private double width;
     private double height;
 
@@ -19,8 +18,7 @@ public class Rectangle extends Shape {
     }
 
     @Override
-    public double area() {
+    public double calculateArea() {
         return width * height;
     }
-
 }

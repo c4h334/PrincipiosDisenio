@@ -5,15 +5,17 @@ public class Main{
 
         ValidateUser vu = new ValidateUser();
 
-        RegisterUser ru = new RegisterUser(vu);
+        UserRegister ru = new UserRegister(vu);
+        UserLogin lu = new UserLogin(vu);
+
 
         ru.registerUser(u);
-        ru.loginUser(u);
+        lu.loginUser(u);
 
         User u2 = new User("kaki", "asda");
 
         ru.registerUser(u2);
-        ru.loginUser(u2);
+        lu.loginUser(u2);
 
 
     }
